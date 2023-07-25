@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Navbar from './Navbar';
+// import Navbar from './Navbar';
 import "../StyleSheets/Reg.css";
 // import { json } from 'express';
 function Empregistration({ screen, setScreen }) {
