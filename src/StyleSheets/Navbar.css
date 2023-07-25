@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sen&family=Ysabeau+SC:wght@300&display=swap');
+    /* font-family: 'Sen', sans-serif; */
+    /* font-family: 'Ysabeau SC', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    height: 20%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: #274986;
+}
+.Logo {
+    color: #dfe1ee;
+    font-size: calc(10px + 2vmin);
+    font-weight: 300;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.X_css {
+    font-size: calc(10px + 2vmin);
+    text-decoration:overline;
+    font-weight: 500;
+    text-shadow: #060808 0 4px 4px;
+    text-decoration-color: #dfe1ee;
+    color: #32589f;
+}
+.X_css:hover{
+    transition: 300ms;
+    text-shadow: #000000 0 -4px 4px;
+}
+.Page_title{
+    font-size: calc(10px + 2vmin);
+    color: #dfe1ee;
+    margin-top: 10px;
+    font-weight: 500;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar_logo {
+    margin-top: 10px;
+    font-weight: 500;
+}
+.Page_name{
+    position: relative;
+    top: 10px;
+font-family: 'Ysabeau SC', sans-serif;
+color: #dfe1ee;
+}
