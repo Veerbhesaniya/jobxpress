@@ -1,7 +1,7 @@
 {
   "name": "job_portle_jobxpress",
   "version": "0.1.0",
-  "homepage": "https://2723vimal.github.io/jobPortle",
+  "homepage": "https://2723vimal.github.io/jobXpress",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
