@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
-import Navbar from '../Components/Navbar';
+// import Navbar from '../Components/Navbar';
 import "../StyleSheets/Reg.css";
 
-function Userregistraton({ screen, setScreen }) {
+function Userregistraton() {
     const [details, setDetails] = useState({
         ID : parseInt(Date.now() * Math.random()),
         FullName  : "",
@@ -43,17 +43,6 @@ function Userregistraton({ screen, setScreen }) {
     })
 
     // localStorage.clear();
-
-    const setDataOnServer = async (e) => {
-        e?.preventDefault();
-        const response = await fetch("localhost:2004/items", {
-            method: 'POST',
-            body: data,
-            headers: {
-                "Content-Type": "application/json"
-            }
-        })
-    }
     return (
         <>
          {/* ID : parseInt(Date.now() * Math.random()),

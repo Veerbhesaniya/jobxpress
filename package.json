@@ -46,5 +46,9 @@
   "main": "index.js",
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "react-router": "^6.14.2",
+    "react-router-dom": "^6.14.2"
+  }
 }

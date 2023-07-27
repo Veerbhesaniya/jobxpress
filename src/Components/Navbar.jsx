@@ -1,6 +1,7 @@
 import React from 'react';
 import "../StyleSheets/Navbar.css";
- const Navbar  = ({ screen, setScreen }) => {
+import { NavLink  , Outlet} from 'react-router-dom';
+const Navbar  = () => {
 
   return (
     <>
@@ -9,14 +10,17 @@ import "../StyleSheets/Navbar.css";
           <h1 className='Logo'>job<span className='X_css'>X</span>press</h1>
         </div>
         <div className='PageName'>
-          <h1 className='Page_name'>{screen}</h1>
+          <h1>Hello</h1>
         </div>
         <div className='Userprofile'>
-          {screen == "Homepage" ? <h1 className='Logo'><img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="" style={{ height: "2em", width: "2em" }} /> Profile</h1> : ""}
-          {screen == "Login" ? <button className='btn btn-outline-light' onClick={() => { setScreen("Registration") }}>SignUP</button> : ""}
-          {screen == "Registration" ? <button className='btn btn-outline-light' onClick={() => { setScreen("Login") }}>Login</button> : ""}
+          <NavLink to="homepage">homepage</NavLink>
+          <NavLink to="login">login</NavLink>
+          <NavLink to="singup">singUp</NavLink>
         </div>
       </div>
+      <main>
+        <Outlet />
+      </main>
     </>
   )
 }

@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
-// import Navbar from './Navbar';
 import "../StyleSheets/Reg.css";
-// import { json } from 'express';
-function Empregistration({ screen, setScreen }) {
+function Empregistration() {
   const [details, setDetails] = useState({
        ID   : parseInt(Date.now() * Math.random()),
        CompanyName :"",

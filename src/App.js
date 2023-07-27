@@ -1,31 +1,26 @@
-import { useState } from "react";
+// import { useState } from "react";
 import "./StyleSheets/App.css"
+import Navbar from "./Components/Navbar";
 import Login from "./Components/Login";
 import Homepage from "./Components/Homepage";
-
-import Slider from "./Components/Slider";
+import Empregistration from "./Components/Emp_Registration";
+import { createBrowserRouter, createRoutesFromElements, RouterProvider, Route } from 'react-router-dom';
+const router = createBrowserRouter(createRoutesFromElements(
+	<Route path="/" element={<Navbar />}>
+		<Route path="/login" element={<Login />} />
+		<Route path="/homepage" element={<Homepage />} />
+		<Route path="/singup" element={<Empregistration />}></Route>
+	</Route>
+))
+// import {Switch} from "react-router";
 const App = () => {
-	const userID = localStorage.getItem("user_id");
-	const defaultscreen = userID ? "Homepage" : "Registration";
-	const [screen, setScreen] = useState(defaultscreen);
-	const renderScreen = () => {
-		switch (screen) {
-			case "Login":
-				return <Login setScreen={setScreen} screen={screen} />
-				break;
-			case "Homepage":
-				return <Homepage setScreen={setScreen} screen={screen} />;
-				break;
-			case "Registration":
-				return <Slider setScreen={setScreen} screen={screen} />;
-				break;
-		}
-	}
+	// const userID = localStorage.getItem("user_id");
+	// const defaultscreen = userID ? "Homepage" : "Registration";
+	// const [screen, setScreen] = useState(defaultscreen);
+
 	return (
 		<>
-			{/* <Slider></Slider>		 */}
-			{/* <Empregistration/> */}
-			{renderScreen()}
+			<RouterProvider router={router}></RouterProvider>
 		</>
 	);
 }

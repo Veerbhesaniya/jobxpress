@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import Navbar from './Navbar'
-
-function Login({screen ,setScreen}) {
+// import Navbar from './Navbar'
+import { Link } from 'react-router-dom';
+function Login() {
 	let [input   , setInput ] = useState({
     username :"",
     password : ""
@@ -22,12 +22,11 @@ function Login({screen ,setScreen}) {
   let user  =  localStorage.getItem("user_"+data.username);
   if (user === data.username) {
     localStorage.setItem("user_id" , user);
-    setScreen("Homepage");
+    // setScreen("Homepage");
   }
 
    return (
     <>
-        <Navbar screen={screen}  setScreen={setScreen}/>
         <div className='Registration_Form'>
         <div className='Form'>
           <div  className='loginslib'>
@@ -36,7 +35,9 @@ function Login({screen ,setScreen}) {
           <div  className='loginslib'>
             <input type="password" placeholder='Password' onChange={(e) =>setLoginpage(e)} name='password'/>
           </div>
+       <Link to="/homepage">
           <button className='btnsubmit' onClick={()=>handlesubmit()}>Submit</button>
+       </Link>
         </div>
 
       </div>
