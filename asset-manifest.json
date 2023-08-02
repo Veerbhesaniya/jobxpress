@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/jobxpress/static/css/main.7429b130.css",
+    "main.js": "/jobxpress/static/js/main.6ca1284c.js",
+    "index.html": "/jobxpress/index.html",
+    "main.7429b130.css.map": "/jobxpress/static/css/main.7429b130.css.map",
+    "main.6ca1284c.js.map": "/jobxpress/static/js/main.6ca1284c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7429b130.css",
+    "static/js/main.6ca1284c.js"
+  ]
+}
