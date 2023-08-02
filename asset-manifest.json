@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/jobxpress/static/css/main.7429b130.css",
-    "main.js": "/jobxpress/static/js/main.17f3350c.js",
+    "main.css": "/jobxpress/static/css/main.a42ef5f1.css",
+    "main.js": "/jobxpress/static/js/main.2e610a52.js",
     "index.html": "/jobxpress/index.html",
-    "main.7429b130.css.map": "/jobxpress/static/css/main.7429b130.css.map",
-    "main.17f3350c.js.map": "/jobxpress/static/js/main.17f3350c.js.map"
+    "main.a42ef5f1.css.map": "/jobxpress/static/css/main.a42ef5f1.css.map",
+    "main.2e610a52.js.map": "/jobxpress/static/js/main.2e610a52.js.map"
   },
   "entrypoints": [
-    "static/css/main.7429b130.css",
-    "static/js/main.17f3350c.js"
+    "static/css/main.a42ef5f1.css",
+    "static/js/main.2e610a52.js"
   ]
 }
